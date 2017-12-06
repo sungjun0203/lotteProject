@@ -12,69 +12,79 @@
 <body>
 
 	<!-- 헤더 -->
-	<jsp:include page="../common/header.jsp"></jsp:include>
+	<div class="header">
+		<jsp:include page="../common/header.jsp"></jsp:include>
+	</div>
 	<!-- 헤더 끝 -->
 
 	<div class="container">
+		<div class="row">
 
-	<div class="col-lg-12" style="margin-bottom:20px">
-		<button type="button" class="btn btn-primary">Primary</button>
-		<button type="button" class="btn btn-secondary">Secondary</button>
-		<button type="button" class="btn btn-success">Success</button>
-		<button type="button" class="btn btn-info">Info</button>
-		<button type="button" class="btn btn-warning">Warning</button>
-		<button type="button" class="btn btn-danger">Danger</button>
+			<div class="col-lg-12 row">
+				<div class="col-lg-8">
+					<div class="card text-white bg-primary" style="height:100%">
+					  <div class="card-body">
+					    <blockquote class="card-blockquote">
+					      <p> 공지사항 </p>
+					      <p> 공지사항은 미구현 </p>
+					    </blockquote>
+					  </div>
+					</div>
+				</div>	
+			
+				<div class="col-lg-4">
+					<div class="list-group">
+						<a href="#" class="list-group-item list-group-item-action active"> 사용자 정보 </a> 
+						<a href="#" class="list-group-item list-group-item-action">	오늘 결제 수 </a> 
+						<a href="#"	class="list-group-item list-group-item-action disabled"> 오늘 총 금액 </a>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-12 row" style="margin-top:20px; padding-right:30px; padding-left:30px">
+				<table class="table table-striped table-hover table-bordered">
+				  <thead class="thead-dark">
+				    <tr>
+				      <th>#</th>
+				      <th>아이템 이름</th>
+				      <th>가격</th>
+				      <th>수량</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td>1</td>
+				      <td>아이스 아메리카노</td>
+				      <td>3500</td>
+				      <td>2</td>
+				    </tr>
+				     <tr>
+				      <td>2</td>
+				      <td>아이스 라뗴</td>
+				      <td>4000</td>
+				      <td>2</td>
+				    </tr>
+				     <tr>
+				      <td>3</td>
+				      <td>아이스 카푸치노</td>
+				      <td>3500</td>
+				      <td>2</td>
+				    </tr>
+				    
+				  </tbody>
+				</table> 
+			</div>
+			
+	
+	
+	
+</div>
+	<!-- 푸터 -->
+	<div class="footer">
+		<jsp:include page="../common/footer.jsp"></jsp:include>
 	</div>
+	<!-- 푸터 끝 -->
 	
-	<div class="card text-white bg-primary" style="margin-bottom:20px">
-	  <div class="card-body">
-	    <blockquote class="card-blockquote">
-	      <p>CARD 정보</p>
-	      <p> hello </p>
-	    </blockquote>
-	  </div>
-	</div>
-	
-
-		<table class="table table-striped table-hover table-bordered" style="margin-bottom:20px">
-			<thead class="thead-dark">
-				<tr>
-					<th>#</th>
-					<th>헤더1</th>
-					<th>헤더2</th>
-					<th>헤더3</th>
-				</tr>
-			</thead>
-			<tbody>
-				<c:forEach items="${list}" var="list">
-					<tr>
-						<td>1</td>
-						<td>${list.col1}</td>
-						<td>${list.col2}</td>
-						<td>${list.col3}</td>
-					</tr>
-				</c:forEach>
-			</tbody>
-		</table>
-		
-		<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-	  <div class="btn-group mr-2" role="group" aria-label="First group">
-	    <button type="button" class="btn btn-secondary">1</button>
-	    <button type="button" class="btn btn-secondary">2</button>
-	    <button type="button" class="btn btn-secondary">3</button>
-	    <button type="button" class="btn btn-secondary">4</button>
-	  </div>
-	 </div>
-	 
-	</div>
-	
-	
-	
-	
-	
-	<!-- 헤더 -->
-	<jsp:include page="../common/footer.jsp"></jsp:include>
-	<!-- 헤더 끝 -->
 
 
 

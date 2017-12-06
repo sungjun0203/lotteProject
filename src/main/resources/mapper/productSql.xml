@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.lotte.product.ProductDao">
+
+<select id="setWriteProduct" resultType="com.lotte.product.ProductDto">
+
+	INSERT INTO PRODUCT(productId, productName, productOrgPrice, productClass, productMakeDate, productMake, productCount, productPrice, productUserId, officeId)
+				VALUES(#{productName}, #{productOrgPrice} , #{productClass}, #{productMakeDate}, #{productMake}, #{productCount}, #{productPrice}, #{productUserId}, #{officeId})
+
+</select>
+
+<select id="getOfficeProductList" parameterType = "Integer" resultType="com.lotte.product.ProductDto">
+
+	SELECT *
+	FROM PRODUCT
+	WHERE officeId = #{officeId}
+
+</select>
+
+</mapper>
+
+
+        
+   

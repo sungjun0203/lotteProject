@@ -5,9 +5,19 @@
 <configuration>
 	<typeAliases>
 		<package name="com.lotte.index" />
+		<package name="com.lotte.user" />
+		<package name="com.lotte.product" />
+		<package name="com.lotte.productClass" />
+		<package name="com.lotte.makeCompany"/>
+		<package name="com.lotte.office"/>
 	</typeAliases>
 	<mappers>
 		<mapper resource="mapper/indexSql.xml" />
+		<mapper resource="mapper/userSql.xml" />
+		<mapper resource="mapper/productSql.xml" />
+		<mapper resource="mapper/productClassSql.xml" />
+		<mapper resource="mapper/makeCompanySql.xml" />
+		<mapper resource="mapper/officeSql.xml" />
 		
 	</mappers>
 

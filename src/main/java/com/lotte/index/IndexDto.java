@@ -2,15 +2,16 @@ package com.lotte.index;
 
 public class IndexDto {
 	
-	String 	col1;
+	String 	colNum1;
 	String 	col2;
 	String col3;
 	
-	public String getCol1() {
-		return col1;
+	
+	public String getColNum1() {
+		return colNum1;
 	}
-	public void setCol1(String col1) {
-		this.col1 = col1;
+	public void setColNum1(String colNum1) {
+		this.colNum1 = colNum1;
 	}
 	public String getCol2() {
 		return col2;

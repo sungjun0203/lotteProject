@@ -4,10 +4,10 @@
 
 <mapper namespace="com.lotte.index.IndexDao">
 
-	<select id="test" parameterType="String" resultType="String">
-		select col1
+<select id="test" parameterType="String" resultType="String">
+		select colNum1
 		from test
-		where col1=#{id}
+		where colNum1=#{id}
 	</select>
 	
 	<select id="testResult" resultType="com.lotte.index.IndexDto">
